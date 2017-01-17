@@ -7,4 +7,4 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/public/index.htm');
 });
 
-app.listen(80);
+app.listen(process.env.PORT || 3000);
